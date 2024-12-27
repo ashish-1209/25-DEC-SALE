@@ -1,0 +1,222 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.60\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "225ee3b26afcd4516d5b",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0e05fc382ded11ba2f8d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1130,\"y\":321,\"width\":150,\"height\":301,\"z\":4000,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"christmas sales trends.Event\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"christmas sales trends\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Event\"},\"Name\":\"christmas sales trends.Event\",\"NativeReferenceName\":\"Event\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Event\"}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 301.00,
+          "width": 150.00,
+          "x": 1130.00,
+          "y": 321.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"0f32140e83c7f744a5f5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":520.0703529372352,\"y\":0,\"z\":0,\"width\":161.92164022847956,\"height\":69.9830817936649,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"SALE\",\"textStyle\":{\"fontSize\":\"32pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"lockAspect\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":-0.25}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.2}}}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Inner'\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.4}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 69.98,
+          "width": 161.92,
+          "x": 520.07,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"4cb7ed08dba2d2532c24\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":321.0988458768154,\"z\":2000,\"width\":520.0703529372352,\"height\":300.5155865257375,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"CountNonNull(christmas sales trends.CustomerID)\"},{\"queryRef\":\"Sum(christmas sales trends.Age)\"},{\"queryRef\":\"christmas sales trends.Gender\"},{\"queryRef\":\"CountNonNull(christmas sales trends.ProductID)\"},{\"queryRef\":\"Sum(christmas sales trends.Quantity)\"},{\"queryRef\":\"Sum(christmas sales trends.UnitPrice)\"},{\"queryRef\":\"CountNonNull(christmas sales trends.TransactionID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"christmas sales trends\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CustomerID\"}},\"Function\":5},\"Name\":\"CountNonNull(christmas sales trends.CustomerID)\",\"NativeReferenceName\":\"Count of CustomerID\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Age\"}},\"Function\":0},\"Name\":\"Sum(christmas sales trends.Age)\",\"NativeReferenceName\":\"Sum of Age\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Gender\"},\"Name\":\"christmas sales trends.Gender\",\"NativeReferenceName\":\"Gender\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ProductID\"}},\"Function\":5},\"Name\":\"CountNonNull(christmas sales trends.ProductID)\",\"NativeReferenceName\":\"Count of ProductID\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Quantity\"}},\"Function\":0},\"Name\":\"Sum(christmas sales trends.Quantity)\",\"NativeReferenceName\":\"Sum of Quantity\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"UnitPrice\"}},\"Function\":0},\"Name\":\"Sum(christmas sales trends.UnitPrice)\",\"NativeReferenceName\":\"Sum of UnitPrice\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"TransactionID\"}},\"Function\":5},\"Name\":\"CountNonNull(christmas sales trends.TransactionID)\",\"NativeReferenceName\":\"Count of TransactionID\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CustomerID\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 300.52,
+          "width": 520.07,
+          "x": 0.00,
+          "y": 321.10,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"7214d34d0b1012f7c5c0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":681.9919931657147,\"y\":9.605521030503024,\"z\":3000,\"width\":598.2867384713312,\"height\":245.62689492286304,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(christmas sales trends.Location)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"christmas sales trends\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Location\"}},\"Function\":3},\"Name\":\"Min(christmas sales trends.Location)\",\"NativeReferenceName\":\"First Location\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 245.63,
+          "width": 598.29,
+          "x": 681.99,
+          "y": 9.61,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"ab35433360492cf71616\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":9.605521030503024,\"z\":1000,\"width\":500.85931087622913,\"height\":292.2822827853063,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Year\"},{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Quarter\"},{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Month\"},{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Day\"},{\"queryRef\":\"christmas sales trends.Event\"},{\"queryRef\":\"christmas sales trends.Location\"},{\"queryRef\":\"Sum(christmas sales trends.Age)\"},{\"queryRef\":\"christmas sales trends.Category\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"christmas sales trends\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Date Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Quarter\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Quarter\",\"NativeReferenceName\":\"Date Quarter\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Date Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"Date Day\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Event\"},\"Name\":\"christmas sales trends.Event\",\"NativeReferenceName\":\"Event\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Location\"},\"Name\":\"christmas sales trends.Location\",\"NativeReferenceName\":\"Location\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Age\"}},\"Function\":0},\"Name\":\"Sum(christmas sales trends.Age)\",\"NativeReferenceName\":\"Sum of Age\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Category\"},\"Name\":\"christmas sales trends.Category\",\"NativeReferenceName\":\"Category\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Quarter\"}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[{\"name\":\"09d5cc3315be9d84646e\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"christmas sales trends\"}},\"Property\":\"Event\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"christmas sales trends\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Event\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Black Friday'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{},\"isHiddenInViewMode\":false}]",
+          "height": 292.28,
+          "width": 500.86,
+          "x": 0.00,
+          "y": 9.61,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"da0df716aab493e3c7b6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":681.9919931657147,\"y\":337.5654533576777,\"z\":5000,\"width\":598.2867384713312,\"height\":267.5823715640128,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"christmas sales trends.Location\"},{\"queryRef\":\"christmas sales trends.Event\"},{\"queryRef\":\"christmas sales trends.PromotionApplied\"},{\"queryRef\":\"christmas sales trends.GiftWrap\"},{\"queryRef\":\"Sum(christmas sales trends.CustomerSatisfaction)\"},{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Year\"},{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Quarter\"},{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Month\"},{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Day\"},{\"queryRef\":\"Sum(christmas sales trends.Age)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"christmas sales trends\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Location\"},\"Name\":\"christmas sales trends.Location\",\"NativeReferenceName\":\"Location\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Event\"},\"Name\":\"christmas sales trends.Event\",\"NativeReferenceName\":\"Event\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"PromotionApplied\"},\"Name\":\"christmas sales trends.PromotionApplied\",\"NativeReferenceName\":\"PromotionApplied\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"GiftWrap\"},\"Name\":\"christmas sales trends.GiftWrap\",\"NativeReferenceName\":\"GiftWrap\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CustomerSatisfaction\"}},\"Function\":0},\"Name\":\"Sum(christmas sales trends.CustomerSatisfaction)\",\"NativeReferenceName\":\"Sum of CustomerSatisfaction\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Date Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Quarter\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Quarter\",\"NativeReferenceName\":\"Date Quarter\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Date Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"Date Day\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Age\"}},\"Function\":0},\"Name\":\"Sum(christmas sales trends.Age)\",\"NativeReferenceName\":\"Sum of Age\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 267.58,
+          "width": 598.29,
+          "x": 681.99,
+          "y": 337.57,
+          "z": 5000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page 4",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "90cda9062257ece3726c",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"046be66d886b5d370bb3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":533,\"y\":0,\"width\":513,\"height\":406,\"z\":2,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"waterfallChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(christmas sales trends.CustomerID)\"}],\"Category\":[{\"queryRef\":\"christmas sales trends.Location\",\"active\":true}],\"Tooltips\":[{\"queryRef\":\"Sum(christmas sales trends.Age)\"}],\"Breakdown\":[{\"queryRef\":\"christmas sales trends.Gender\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"christmas sales trends\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CustomerID\"}},\"Function\":5},\"Name\":\"CountNonNull(christmas sales trends.CustomerID)\",\"NativeReferenceName\":\"Count of CustomerID\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Age\"}},\"Function\":0},\"Name\":\"Sum(christmas sales trends.Age)\",\"NativeReferenceName\":\"Sum of Age\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Gender\"},\"Name\":\"christmas sales trends.Gender\",\"NativeReferenceName\":\"Gender\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Location\"},\"Name\":\"christmas sales trends.Location\",\"NativeReferenceName\":\"Location\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CustomerID\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 406.00,
+          "width": 513.00,
+          "x": 533.00,
+          "y": 0.00,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"29c17891490bd7efd881\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":416,\"width\":513,\"height\":304,\"z\":1,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"christmas sales trends.Category\"},{\"queryRef\":\"Sum(christmas sales trends.Age)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"christmas sales trends\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Category\"},\"Name\":\"christmas sales trends.Category\",\"NativeReferenceName\":\"Category\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Age\"}},\"Function\":0},\"Name\":\"Sum(christmas sales trends.Age)\",\"NativeReferenceName\":\"Sum of Age\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 304.00,
+          "width": 513.00,
+          "x": 10.00,
+          "y": 416.00,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"91a4c987df568639e4d0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":533,\"y\":416,\"width\":513,\"height\":304,\"z\":3,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Series\":[{\"queryRef\":\"christmas sales trends.Event\"}],\"Category\":[{\"queryRef\":\"christmas sales trends.Location\",\"active\":true},{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Year\"},{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Quarter\"},{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Month\"},{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Day\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"christmas sales trends\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Location\"},\"Name\":\"christmas sales trends.Location\",\"NativeReferenceName\":\"Location\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Event\"},\"Name\":\"christmas sales trends.Event\",\"NativeReferenceName\":\"Event\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Date Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Quarter\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Quarter\",\"NativeReferenceName\":\"Date Quarter\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Date Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"Date Day\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 304.00,
+          "width": 513.00,
+          "x": 533.00,
+          "y": 416.00,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"acabdd01e8af93f9201e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.605521030503024,\"y\":0,\"z\":0,\"width\":513.2092664868759,\"height\":406.1763178612707,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineStackedColumnComboChart\",\"projections\":{\"Category\":[{\"queryRef\":\"christmas sales trends.Category\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(christmas sales trends.Age)\"}],\"Series\":[{\"queryRef\":\"christmas sales trends.Gender\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"christmas sales trends\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Category\"},\"Name\":\"christmas sales trends.Category\",\"NativeReferenceName\":\"Category\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Age\"}},\"Function\":0},\"Name\":\"Sum(christmas sales trends.Age)\",\"NativeReferenceName\":\"Sum of Age\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Gender\"},\"Name\":\"christmas sales trends.Gender\",\"NativeReferenceName\":\"Gender\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Age\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 406.18,
+          "width": 513.21,
+          "x": 9.61,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page 3",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "9d3230647e7649ca0af8",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"27f8bd55f8e707b46350\",\"layouts\":[{\"id\":0,\"position\":{\"x\":498,\"y\":0,\"width\":478,\"height\":391,\"z\":2,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(christmas sales trends.TransactionID)\"}],\"Category\":[{\"queryRef\":\"christmas sales trends.PaymentType\",\"active\":true},{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Quarter\",\"active\":true},{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Month\",\"active\":true},{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Day\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"christmas sales trends\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"TransactionID\"}},\"Function\":5},\"Name\":\"CountNonNull(christmas sales trends.TransactionID)\",\"NativeReferenceName\":\"Count of TransactionID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"PaymentType\"},\"Name\":\"christmas sales trends.PaymentType\",\"NativeReferenceName\":\"PaymentType\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Date Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Quarter\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Quarter\",\"NativeReferenceName\":\"Date Quarter\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Date Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"Date Day\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 391.00,
+          "width": 478.00,
+          "x": 498.00,
+          "y": 0.00,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"a752ee7d2b0beb21db3d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":401,\"width\":478,\"height\":319,\"z\":1,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"christmas sales trends.Category\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(christmas sales trends.ProductID)\"},{\"queryRef\":\"Sum(christmas sales trends.Quantity)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"christmas sales trends\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Category\"},\"Name\":\"christmas sales trends.Category\",\"NativeReferenceName\":\"Category\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ProductID\"}},\"Function\":5},\"Name\":\"CountNonNull(christmas sales trends.ProductID)\",\"NativeReferenceName\":\"Count of ProductID\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Quantity\"}},\"Function\":0},\"Name\":\"Sum(christmas sales trends.Quantity)\",\"NativeReferenceName\":\"Sum of Quantity\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ProductID\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 319.00,
+          "width": 478.00,
+          "x": 10.00,
+          "y": 401.00,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"af9a241ccae855af144a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":498,\"y\":401,\"width\":478,\"height\":319,\"z\":3,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Quarter\"},{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Month\"},{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Day\"}],\"Y\":[{\"queryRef\":\"CountNonNull(christmas sales trends.ProductID)\"},{\"queryRef\":\"Sum(christmas sales trends.Quantity)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"christmas sales trends\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Date Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Quarter\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Quarter\",\"NativeReferenceName\":\"Date Quarter\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Date Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"Date Day\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ProductID\"}},\"Function\":5},\"Name\":\"CountNonNull(christmas sales trends.ProductID)\",\"NativeReferenceName\":\"Count of ProductID\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Quantity\"}},\"Function\":0},\"Name\":\"Sum(christmas sales trends.Quantity)\",\"NativeReferenceName\":\"Sum of Quantity\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 319.00,
+          "width": 478.00,
+          "x": 498.00,
+          "y": 401.00,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"f70bab99bb1b6d1f1e5f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.605521030503024,\"y\":0,\"z\":0,\"width\":477.5316169450075,\"height\":391.08192767048024,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Quarter\"},{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Month\"},{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Day\"},{\"queryRef\":\"christmas sales trends.PromotionApplied\"}],\"Series\":[{\"queryRef\":\"christmas sales trends.Event\"}],\"Rows\":[{\"queryRef\":\"christmas sales trends.Location\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"christmas sales trends\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Date Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Quarter\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Quarter\",\"NativeReferenceName\":\"Date Quarter\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Date Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"Date Day\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Event\"},\"Name\":\"christmas sales trends.Event\",\"NativeReferenceName\":\"Event\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Location\"},\"Name\":\"christmas sales trends.Location\",\"NativeReferenceName\":\"Location\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"PromotionApplied\"},\"Name\":\"christmas sales trends.PromotionApplied\",\"NativeReferenceName\":\"PromotionApplied\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{}}}",
+          "filters": "[]",
+          "height": 391.08,
+          "width": 477.53,
+          "x": 9.61,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "cfb778c7df40f32e0caa",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1ac50e39ffcb5ad805f9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.605521030503024,\"y\":0,\"z\":0,\"width\":1270.6732106065429,\"height\":67.23864721352116,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"CUSTOMER DETAILS\",\"textStyle\":{\"fontSize\":\"28pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.2}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 67.24,
+          "width": 1270.67,
+          "x": 9.61,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"82b654b48fc2f5d2643d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.605521030503024,\"y\":172.89937854905443,\"z\":1000,\"width\":504.9759627464447,\"height\":547.5146987386723,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"CountNonNull(christmas sales trends.CustomerID)\"},{\"queryRef\":\"christmas sales trends.Category\"},{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Year\"},{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Quarter\"},{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Month\"},{\"queryRef\":\"christmas sales trends.Date.Variation.Date Hierarchy.Day\"},{\"queryRef\":\"Sum(christmas sales trends.DiscountAmount)\"},{\"queryRef\":\"CountNonNull(christmas sales trends.ProductID)\"},{\"queryRef\":\"christmas sales trends.PaymentType\"},{\"queryRef\":\"Sum(christmas sales trends.Quantity)\"},{\"queryRef\":\"CountNonNull(christmas sales trends.TransactionID)\"},{\"queryRef\":\"Sum(christmas sales trends.UnitPrice)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"christmas sales trends\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CustomerID\"}},\"Function\":5},\"Name\":\"CountNonNull(christmas sales trends.CustomerID)\",\"NativeReferenceName\":\"Count of CustomerID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Category\"},\"Name\":\"christmas sales trends.Category\",\"NativeReferenceName\":\"Category\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Date Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Quarter\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Quarter\",\"NativeReferenceName\":\"Date Quarter\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Date Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"christmas sales trends.Date.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"Date Day\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"DiscountAmount\"}},\"Function\":0},\"Name\":\"Sum(christmas sales trends.DiscountAmount)\",\"NativeReferenceName\":\"Sum of DiscountAmount\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ProductID\"}},\"Function\":5},\"Name\":\"CountNonNull(christmas sales trends.ProductID)\",\"NativeReferenceName\":\"Count of ProductID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"PaymentType\"},\"Name\":\"christmas sales trends.PaymentType\",\"NativeReferenceName\":\"PaymentType\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Quantity\"}},\"Function\":0},\"Name\":\"Sum(christmas sales trends.Quantity)\",\"NativeReferenceName\":\"Sum of Quantity\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"TransactionID\"}},\"Function\":5},\"Name\":\"CountNonNull(christmas sales trends.TransactionID)\",\"NativeReferenceName\":\"Count of TransactionID\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"UnitPrice\"}},\"Function\":0},\"Name\":\"Sum(christmas sales trends.UnitPrice)\",\"NativeReferenceName\":\"Sum of UnitPrice\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 547.51,
+          "width": 504.98,
+          "x": 9.61,
+          "y": 172.90,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"929dc3b1ef227351a322\",\"layouts\":[{\"id\":0,\"position\":{\"x\":515,\"y\":173,\"width\":765,\"height\":547,\"z\":1001,\"tabOrder\":1001}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(christmas sales trends.Age)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"christmas sales trends\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Age\"}},\"Function\":0},\"Name\":\"Sum(christmas sales trends.Age)\",\"NativeReferenceName\":\"Sum of Age\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Age\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"filterSortOrder\":3,\"hasDefaultSort\":true}}",
+          "filters": "[{\"name\":\"7635109117b1b49bb55e\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"christmas sales trends\"}},\"Property\":\"Age\"}},\"Function\":0}},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false,\"ordinal\":0},{\"name\":\"200fafd020fb196120ad\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"christmas sales trends\"}},\"Property\":\"Age\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"christmas sales trends\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":1,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Age\"}},\"Right\":{\"Literal\":{\"Value\":\"40L\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":1,\"ordinal\":1}]",
+          "height": 547.00,
+          "width": 765.00,
+          "x": 515.00,
+          "y": 173.00,
+          "z": 1001.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
